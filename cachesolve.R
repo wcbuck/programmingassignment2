@@ -3,7 +3,7 @@
 # this first function creates a vector that is a list
 # it takes the object x as an argument
 # x is a numeric matrix
-makeCacheMatrix <- function(x = numeric()) {
+makeCacheMatrix <- function(x = matrix()) {
     i <- NULL
     set <- function(y) {
         x <<- y
