@@ -1,5 +1,8 @@
 ## Cache the inverse of a matrix etc.
 
+# this first function creates a vector that is a list
+# it takes the object x as an argument
+# x is a numeric matrix
 makeCacheMatrix <- function(x = numeric()) {
     i <- NULL
     set <- function(y) {
@@ -13,6 +16,10 @@ makeCacheMatrix <- function(x = numeric()) {
          setinverse = setinverse,
          getinverse = getinverse)
 }
+
+# this second  decides whether to get the cached inverse
+# or do the calculation to get the inverse of the matrix 
+# (solve is the function that calculates the inverse of a matrix)
 
 cacheSolve <- function(x, ...) {
     i <- x$getinverse()
